@@ -8,9 +8,9 @@
 
 from random import *
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+team_name = 'Team2' # Only 10 chars displayed.
+strategy_name = 'Tit for Tat with Randomness'
+strategy_description = 'The first move is collude and the following moves copy the last move of the opponent. If the opponent has colluded more than 75 percent of the time, their is a 25 percent chance that we will return betray instead of collude.'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
